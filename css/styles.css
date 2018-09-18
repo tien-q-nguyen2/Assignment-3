@@ -1,0 +1,130 @@
+/* * * * * * * * * * * * * * * * * * * * *
+General
+* * * * * * * * * * * * * * * * * * * * */
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * *
+Header
+* * * * * * * * * * * * * * * * * * * * */
+header {
+    height: 66px;
+    background: white;
+}
+
+/* header .container {
+    height: 66px;
+} */
+
+.logo {
+    width: 100px;
+    margin-right: auto;
+}
+
+.logo span {
+    margin-left: 10px;
+}
+
+header ul {
+    margin-bottom: 0;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    font-family: 'Roboto', sans-serif;
+    color: grey;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    height: 66px;
+    padding: 0 10px;
+
+    display: flex;
+    align-items: center;
+}
+
+header ul li a:hover {
+    font-family: 'Roboto', sans-serif;
+    color: grey;
+    font-size: 0.9em;
+    background: #e3e3e3;
+    text-decoration: none;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * *
+Hero
+* * * * * * * * * * * * * * * * * * * * */
+.hero {
+    height: 400px;
+    /* background: #ddd; */
+    background: url('../img/1.jpg');
+    background-size: cover;
+
+    height: 50vh;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * *
+Main
+* * * * * * * * * * * * * * * * * * * * */
+main {
+    min-height: 400px;
+    padding: 80px 0;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * *
+Footer
+* * * * * * * * * * * * * * * * * * * * */
+footer {
+    padding: 20px 0;
+    height: 100px;
+    background: #F3F3F3;
+}
+
+
+.link-container {
+    /* Flex Properties */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.link-container a {
+    color: grey;
+}
+
+/* Media Query */
+.visible-for-mobile {
+    display: flex;
+    align-items: center;
+    height: 66px;
+}
+
+.invisible-for-mobile {
+    display: none;
+}
+
+@media (min-width: 576px) { 
+    .visible-for-mobile {
+        display: none;
+    }
+    
+    .invisible-for-mobile {
+        display: flex;
+    }
+}
