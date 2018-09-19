@@ -21,17 +21,18 @@ header {
     background: white;
 }
 
-/* header .container {
-    height: 66px;
-} */
-
 .logo {
-    width: 100px;
+    width: 120px;
     margin-right: auto;
 }
 
 .logo span {
     margin-left: 10px;
+    font-style: italic;
+}
+
+.fa-brain {
+    font-size: 40px;
 }
 
 header ul {
@@ -56,56 +57,22 @@ header ul li a {
 }
 
 header ul li a:hover {
-    font-family: 'Roboto', sans-serif;
     color: grey;
     font-size: 0.9em;
     background: #e3e3e3;
     text-decoration: none;
 }
 
-
-/* * * * * * * * * * * * * * * * * * * * *
-Hero
-* * * * * * * * * * * * * * * * * * * * */
-.hero {
-    height: 400px;
-    /* background: #ddd; */
-    background: url('../img/1.jpg');
-    background-size: cover;
-
-    height: 50vh;
-}
-
-
-/* * * * * * * * * * * * * * * * * * * * *
-Main
-* * * * * * * * * * * * * * * * * * * * */
-main {
-    min-height: 400px;
-    padding: 80px 0;
-}
-
-
-/* * * * * * * * * * * * * * * * * * * * *
-Footer
-* * * * * * * * * * * * * * * * * * * * */
-footer {
-    padding: 20px 0;
-    height: 100px;
-    background: #F3F3F3;
-}
-
-
-.link-container {
-    /* Flex Properties */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.link-container a {
+.burger {
     color: grey;
+    height: 66px;
+    padding: 0 20px;
+}
+
+.burger:hover {
+    color: grey;
+    background: #e3e3e3;
+    text-decoration: none;
 }
 
 /* Media Query */
@@ -126,5 +93,110 @@ footer {
     
     .invisible-for-mobile {
         display: flex;
+    }
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * *
+Hero
+* * * * * * * * * * * * * * * * * * * * */
+.hero {
+    height: 400px;
+    background: url('../img/1.jpg');
+    background-size: cover;
+    background-position: 50% 25%;
+
+    height: 75vh;
+}
+
+.elevator {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 50px;
+    background: rgba(25, 25, 25, 0.75);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.elevator h1 {
+    color: rgb(255, 245, 137);
+    font-size: 1.6em;
+}
+
+.elevator p {
+    color: #ccc;
+    font-size: 1.2em;
+}
+
+.elevator a {
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: #ccc;
+    padding: 10px;
+
+    border: 1px #ccc solid;
+    border-radius: 10px;
+}
+
+.elevator a:hover {
+    color:rgb(255, 255, 255);
+    border: 1px rgb(255, 255, 255) solid;
+    text-decoration: none;
+    background: rgba(255, 245, 137, 0.2);
+}
+
+@media (max-width: 576px) { 
+    .elevator{
+        width: 100%;
+    }
+}
+
+/* * * * * * * * * * * * * * * * * * * * *
+Main
+* * * * * * * * * * * * * * * * * * * * */
+main {
+    min-height: 400px;
+    padding: 80px 0;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * *
+Footer
+* * * * * * * * * * * * * * * * * * * * */
+footer {
+    padding: 20px 0;
+    height: 100px;
+    background: #F3F3F3;
+}
+
+.link-container {
+    /* Flex Properties */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link-container a {
+    color: grey;
+    height: 50px;
+    padding: 30px 50px;
+
+    display: flex;
+    align-items: center;
+}
+
+.link-container a:hover {
+    background: #e3e3e3;
+    text-decoration: none;
+}
+
+@media (max-width: 576px) { 
+    .link-container a {
+        padding: 30px 10px;
     }
 }
